@@ -1,0 +1,2 @@
+JMH S 33 org.example.ejercicio2.Ejercicio2 S 76 org.example.ejercicio2.jmh_generated.Ejercicio2_parallelStreamFilter_jmhTest S 20 parallelStreamFilter S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 33 org.example.ejercicio2.Ejercicio2 S 68 org.example.ejercicio2.jmh_generated.Ejercicio2_streamFilter_jmhTest S 12 streamFilter S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
