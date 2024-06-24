@@ -1,13 +1,17 @@
 package org.example;
 
 import org.example.*;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class AvionPrivadoTest {
 
-    private AvionPrivado avionPrivado= new AvionPrivado(200, 50);
-
+    private AvionPrivado avionPrivado;
+    @BeforeEach
+    public void setup() {
+        avionPrivado = new AvionPrivado(200, 50);
+    }
     @Test
     public void testCalcularConsumoAvionPrivadoDevuelve250() {
         int consumo = avionPrivado.volar(5);

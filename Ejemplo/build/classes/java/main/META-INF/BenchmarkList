@@ -1,2 +1,2 @@
-JMH S 27 org.example.StreamBenchmark S 70 org.example.jmh_generated.StreamBenchmark_paralellStreamFilter_jmhTest S 20 paralellStreamFilter S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
-JMH S 27 org.example.StreamBenchmark S 62 org.example.jmh_generated.StreamBenchmark_streamFilter_jmhTest S 12 streamFilter S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 30 org.example.StreamBenchmarkEj2 S 73 org.example.jmh_generated.StreamBenchmarkEj2_parallelStreamFilter_jmhTest S 20 parallelStreamFilter S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 30 org.example.StreamBenchmarkEj2 S 65 org.example.jmh_generated.StreamBenchmarkEj2_streamFilter_jmhTest S 12 streamFilter S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 

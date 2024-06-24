@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.AvionComercialTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-23T20:53:37" hostname="DESKTOP-C1V3VSG" time="0.052">
+<testsuite name="org.example.AvionComercialTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-24T02:23:22" hostname="DESKTOP-C1V3VSG" time="0.055">
   <properties/>
-  <testcase name="testCalcularConsumoAvionComercialDevuelve50()" classname="org.example.AvionComercialTest" time="0.046"/>
-  <testcase name="testObtenerConsumoCombustibleDevuelve10()" classname="org.example.AvionComercialTest" time="0.002"/>
+  <testcase name="testCalcularConsumoAvionComercialDevuelve50()" classname="org.example.AvionComercialTest" time="0.048"/>
+  <testcase name="testObtenerConsumoCombustibleDevuelve10()" classname="org.example.AvionComercialTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

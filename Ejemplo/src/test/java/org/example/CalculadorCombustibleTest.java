@@ -1,12 +1,17 @@
 package org.example;
 
 import org.example.*;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CalculadorCombustibleTest {
-    private CalculadorCombustible calculadorCombustible = CalculadorCombustible.getInstance();
+    private CalculadorCombustible calculadorCombustible ;
 
+    @BeforeEach
+    public void setup() {
+        calculadorCombustible = CalculadorCombustible.getInstance();
+    }
     @Test
     public void testCalcularCombustibleAvionPrivadoDevuelve2500() {
         AvionPrivado avionPrivado = new AvionPrivado(3000, 50);
@@ -26,7 +31,4 @@ public class CalculadorCombustibleTest {
         CalculadorCombustible calculadorCombustible2 = CalculadorCombustible.getInstance();
         assertEquals(calculadorCombustible, calculadorCombustible2);
     }
-
-
-
 }

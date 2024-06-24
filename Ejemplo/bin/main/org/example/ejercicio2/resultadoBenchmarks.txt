@@ -1,0 +1,102 @@
+10:56:08 p. m.: Executing ':StreamBenchmark.main()'...
+
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :StreamBenchmark.main()
+# JMH version: 1.33
+# VM version: JDK 18.0.2, OpenJDK 64-Bit Server VM, 18.0.2+9-FR
+# VM invoker: C:\Users\lucap\.jdks\corretto-18.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=ES -Duser.language=es -Duser.variant
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.StreamBenchmarkEj2.parallelStreamFilter
+
+# Run progress: 0,00% complete, ETA 00:05:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 189493979,245 ns/op
+# Warmup Iteration   2: 146679498,551 ns/op
+# Warmup Iteration   3: 181008475,000 ns/op
+# Warmup Iteration   4: 161202387,500 ns/op
+# Warmup Iteration   5: 154387355,385 ns/op
+Iteration   1: 162708508,065 ns/op
+Iteration   2: 161916177,419 ns/op
+Iteration   3: 150951277,612 ns/op
+Iteration   4: 150483226,866 ns/op
+Iteration   5: 162021966,129 ns/op
+Iteration   6: 156876953,125 ns/op
+Iteration   7: 154706898,462 ns/op
+Iteration   8: 151878118,182 ns/op
+Iteration   9: 157790904,688 ns/op
+Iteration  10: 155382589,231 ns/op
+
+
+Result "org.example.StreamBenchmarkEj2.parallelStreamFilter":
+  156471661,978 �(99.9%) 7000925,098 ns/op [Average]
+  (min, avg, max) = (150483226,866, 156471661,978, 162708508,065), stdev = 4630678,483
+  CI (99.9%): [149470736,880, 163472587,076] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 18.0.2, OpenJDK 64-Bit Server VM, 18.0.2+9-FR
+# VM invoker: C:\Users\lucap\.jdks\corretto-18.0.2\bin\java.exe
+# VM options: -Dfile.encoding=windows-1252 -Duser.country=ES -Duser.language=es -Duser.variant
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.StreamBenchmarkEj2.streamFilter
+
+# Run progress: 50,00% complete, ETA 00:02:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 129531571,795 ns/op
+# Warmup Iteration   2: 138256645,205 ns/op
+# Warmup Iteration   3: 168445826,667 ns/op
+# Warmup Iteration   4: 167366821,667 ns/op
+# Warmup Iteration   5: 187625948,148 ns/op
+Iteration   1: 132230560,526 ns/op
+Iteration   2: 134403233,333 ns/op
+Iteration   3: 134203505,333 ns/op
+Iteration   4: 133540354,667 ns/op
+Iteration   5: 135834895,932 ns/op
+Iteration   6: 135491893,243 ns/op
+Iteration   7: 131524575,325 ns/op
+Iteration   8: 131145415,597 ns/op
+Iteration   9: 128385265,823 ns/op
+Iteration  10: 128570055,115 ns/op
+
+
+Result "org.example.StreamBenchmarkEj2.streamFilter":
+  132532975,490 �(99.9%) 3996921,128 ns/op [Average]
+  (min, avg, max) = (128385265,823, 132532975,490, 135834895,932), stdev = 2643715,853
+  CI (99.9%): [128536054,361, 136529896,618] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:05:04
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                             Mode  Cnt          Score         Error  Units
+StreamBenchmark.parallelStreamFilter  avgt   10  156471661,978 � 7000925,098  ns/op
+StreamBenchmark.streamFilter          avgt   10  132532975,490 � 3996921,128  ns/op
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 5m 6s
+2 actionable tasks: 2 executed
+11:01:15 p. m.: Execution finished ':StreamBenchmark.main()'.
